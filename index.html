@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1 id="title">SurveyForm</h1>
+    <p id="description">Thank you to for taking the time to help us improve the platform</p>
+    <form id="survey-form">
+      <label id="name-label" for="name">Name <input type="text" required id="name" placeholder="Enter your name" /></label>
+      <label id="email-label" for="email">Email <input type="email" id="email" placeholder="Enter your email" required /></label>
+      <label id="number-label" for="number" placeholder="age"> Age (optional) <input type="number" id="number" min="1" max="120" placeholder="Age" />
+      </label>
+      <label for="dropdown">Which option best describe your current role?
+        <select id="dropdown">
+          <option disabled selected>Select current role</option>
+          <option>Student</option>
+          <option>Full Time Job</option>
+          <option>Full Time Learner</option>
+          <option>Prefer not to say</option>
+          <option>Other</option>
+        </select>
+        <label> Would you recommend this site to a friend?
+        <label><input type="radio" value="definetly" name="recommend" class="inline"/> Definetly</label>
+        <label><input type="radio" value="maybe" name="recommend" class="inline"/> Maybe</label>
+        <label><input type="radio" value="notsure" name="recommend" class="inline"/> Not sure</label>
+        </label>
+        <label>Which option best describe your current role?
+        <select>
+          <option disabled selected>Select an option</option>
+          <option>Challenges</option>
+          <option>Projects</option>
+          <option>Community</option>
+          <option>Open Source</option>
+          <option>Other</option>
+        </select>
+        <label> What would you liek to see improved? (check all that apply)
+          <label><input type="checkbox" value="frontendprojects" class="inline"/> Front-end projects</label>
+          <label><input type="checkbox" value="backendprojects" class="inline"/> Back-end projects</label>
+          <label><input type="checkbox" value="datavisualization" class="inline"/> Data Visualization</label>
+          <label><input type="checkbox" value="challenges" class="inline"/> Challenges</label>
+          <label><input type="checkbox" value="opensource" class="inline"> Open Source Community</label>
+          <label for="comment"> Any comments or suggestion?
+            <textarea id="comment">Enter your comment here...</textarea>
+          </label>
+          <input type="submit" value="Submit" id="submit"/>
+    </form>  
+</body>
+</html>
